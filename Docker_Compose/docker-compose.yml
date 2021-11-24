@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+  namenode:
+    build: 
+      args:
+        node_id: hdfs-namenode
+
+    image : gradiant/hdfs-namenode
+    ports:
+      - "8080:8080"
+    container_name: "hdfs-namenode"
+
+  hdfs-datanode-1:
+    build: 
+      args:
+        node_id: hdfs-datanode1
+    image : gradiant/hdfs-datanode
+    container_name: "hdfs-datanode1"
+    ports:
+      - "8081:8081"
+  hdfs-datanode-2:
+    build: 
+      args:
+        node_id: hdfs-datanode2
+    image : gradiant/hdfs-datanode
+    container_name: "hdfs-datanode2"
+    ports:
+      - "8082:8081"
+  hdfs-datanode-3:
+    build: 
+      args:
+        node_id: hdfs-datanode3
+    image : gradiant/hdfs-datanode
+    container_name: "hdfs-datanode3"
+    ports:
+      - "8083:8081"
