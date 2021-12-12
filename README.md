@@ -12,7 +12,12 @@ https://github.com/big-data-europe/docker-hadoop
 - Ensuite une fois dans le dossier, lancez avec " docker-compose up -d "
 - Accès a la page web -> http://localhost:9870/
 
+# Fichiers
 
+Exemple de fichier à écrire dans HDFS 
+
+lien : <br>
+https://mega.nz/folder/slolVIbB#7RUxiXkNBGd1J-jYSD0i5g
 
 # Ecriture dans HDFS
 
