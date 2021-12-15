@@ -5,13 +5,20 @@ https://github.com/big-data-europe/docker-hadoop
 
 
 # Installation
+Fichiers à disposition :
+ Distribuer-3-nodes.yml
+ Distribuer-5-nodes.yml
+ Non-distribuer.yml
+
+
 
 - clonez le git
 - cd Chemin/acces/fichier
 - Choissisez le cluster que vous voulez lancé
-- Ensuite une fois dans le dossier, lancez avec " docker-compose up -d "
+- Ensuite une fois dans le dossier, lancez avec " docker-compose --file <nomFichier>.yml up -d"
 - Accès a la page web -> http://localhost:9870/
 
+- Vous pouvez éteindre le cluster avec "docker-compose --file <nomFichier>.yml down"
 # Fichiers
 
 Exemple de fichier à écrire dans HDFS 
